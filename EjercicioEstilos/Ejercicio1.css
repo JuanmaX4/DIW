@@ -1,0 +1,44 @@
+/*Texto Principal*/
+body{
+    color: #00f;
+    background-color: #CFC;
+    font-family: Georgia, Cambria, serif;
+    font-size: 16px;
+}
+
+/*Encabezado de nivel 1*/
+
+h1{
+    color: #F00;
+    font-family: Verdana, Calibri, Sans-Serif;
+    font-size: 32px;
+}
+
+/*Encabezado de nivel 2*/
+
+h2{
+    color:#A00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 24px;
+}
+
+/*El color de los campos de los datos del libro es verde oscuro: #060.*/
+span{
+    color: #060;
+}
+
+/*El color de los campos de los datos del libro es verde oscuro: #060.El texto "Internet" y la "Web" cuando actúan como sustantivos*/
+
+strong{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+/* El texto "Hypertext Markup Language", "Cascading Style Sheets" y los acrónimos "HTML" y "CSS" */
+
+em{
+    color: #FFF;
+    background-color: #000;
+    font-style: italic;
+}
+
