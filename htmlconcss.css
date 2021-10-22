@@ -1,0 +1,35 @@
+.u{
+  text-decoration: underline;   
+}
+.i{
+  font-style: italic; 
+}
+.b{
+  font-weight: bold; 
+}
+.s{
+  text-decoration:line-through;
+}
+.blockquote{
+    margin-left: 30px;
+}
+.center{
+    text-align: center;
+}
+.cite{
+    font-style: italic; 
+}
+.sup{
+    position: relative;
+    font-size: 13px;
+    bottom: 5px;
+}
+.sub{
+    position: relative;
+    font-size: 13px;
+    bottom: -5px;
+}
+.code{
+    font-family: monospace;
+    font-weight: bold; 
+}
