@@ -1,12 +1,12 @@
 a {
-    color: red;
+    color: white;
+    background-color:blue;
     text-decoration: none;
   }
-    a:visited {
+   a:visited {
         color: darkgreen;
         text-decoration: none;
     }
-
   a:hover {
     color: #FFF;
     background-color: #F00;
