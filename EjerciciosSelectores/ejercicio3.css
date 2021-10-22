@@ -1,6 +1,6 @@
 a {
-    color: white;
-    background-color:blue;
+    color: blue;
+    background-color:white;
     text-decoration: none;
   }
    a:visited {
@@ -15,6 +15,7 @@ a {
   
   a:focus {
     color: blue;
+    background-color:grey;
     text-decoration: underline;
   }
   
