@@ -16,7 +16,7 @@ a {
   a:focus {
     color: blue;
     background-color:grey;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   a:active {
