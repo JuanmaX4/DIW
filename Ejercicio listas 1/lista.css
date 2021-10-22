@@ -1,0 +1,16 @@
+body{
+    margin-left: 30px;
+}
+
+.tabla{
+    list-style-type: decimal;
+}
+
+.tabla2{
+    list-style-type: circle;
+    margin-left: 40px;
+}
+
+.tabla3{
+    list-style-image: url("./España.gif");
+}
