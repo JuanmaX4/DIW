@@ -1,0 +1,27 @@
+h1{
+    border: 2px solid blue;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h2{
+    border: 2px solid black;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul{
+    border: 2px solid green;
+    margin-left: 10px;
+    padding-top: 15px;
+}
+
+li{
+  margin-bottom: 15px;  
+}
+
+li:last-child{
+    margin-bottom: 0px;  
+}
