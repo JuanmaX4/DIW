@@ -1,0 +1,39 @@
+form label{
+	font-weight:bold;
+	display:inline-block;
+}
+
+ul{
+    height:20em;
+    background-color: #ccc;
+    width: 45%;
+    margin: auto;
+    padding: 2px;
+    list-style-type: none;
+}
+
+input:required {
+    outline: 1px solid red;
+}
+
+li{
+    padding: 2%;
+}
+
+body{
+    text-align: center;
+    font-weight: bold;
+}
+
+#enviar{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    width: 70%
+}
+
+#mensaje300{
+    height: 5em;
+    width: 65%;
+    padding: 0;
+}
