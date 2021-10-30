@@ -7,15 +7,81 @@
 </head>
 <body>
     <h1>iDESWEB</h1>
-    <p>Formulario de Registo</p>
+    <h2>Formulario de Registo</h2>
     <div>
-        <h2>¿Quién eres?</h2>
-        <label for="nombre">Nombre</label>
+    <fieldset>
+        <legend>¿quien eres?</legend>
+        <label>Nombre</label>
         <input type="text"/>
-        <label for="name">Apellidos</label>
+        <label>Apellidos</label>
         <input type="text"/>
-        <label for="mail">Correo Electronico</label>
+        <label>Correo Electronico</label>
         <input type="text"/>
+        <label id="calendario">Fecha de Nacimiento</label>
+        <input type="date" min="01-01-2021" max="01-01-2031"/> <!-- Esta parte la hize de esta manera porque no veia de otra forma llenar el html lleno de select y muchisimas option -->
+    </div>         
+    </fieldset>
+        
+        <!-- <select>
+            <option>Mes&hellip;</option>
+            <option>Enero</option>
+            <option>Febrero</option>
+            <option>Marzo</option>
+            <option>Abril</option>
+            <option>Mayo</option>
+            <option>Junio</option>
+            <option>Julio</option>
+            <option>Agosto</option>
+            <option>Septiembre</option>
+            <option>Octubre</option>
+            <option>Noviembre</option>
+            <option>Diciembre</option>
+        </select> -->
+    <br></br>
+    <div>
+    <fieldset>
+        <legend id="a">¿de dónde eres?</legend>
+        <label >Codigo</label>
+        <input type="text"/>
+        <label>Codigo Postal</label>
+        <input type="text"/>
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+        <option>País</option>
+        </select>
     </div>
+    </fieldset>
+    <br></br>
+    <div>
+        <fieldset>
+            <legend id="a">¿Cómo quieres iniciar sesión?</legend>
+            <label >Nombre de usuario</label>
+            <input type="text"/>
+            <label>Contraseña</label>
+            <input type="text"/>
+            <label>Vuelve a escribir la contraseña</label>
+            <input type="text"/>
+    </div>
+        </fieldset>
+        <br></br>
+    <div>
+        <fieldset>
+            <legend>Condiciones de registro</legend>
+            <p>
+            <label>Deseo recibir ofertas de iDESWEB</label>
+            <br>
+            <label class="labelOpcion">Una vez al día</label><input type="radio"  class="opcion"/> 
+            <label class="labelOpcion">Una vez a la semana</label><input type="radio"  class="opcion"/> 
+            <label class="labelOpcion">Una vez al mes</label><input type="radio" class="opcion"/> 
+            </p>
+            <p>
+            <label class="labelOpcion">Acepto el acuerdo de servicios, la declaración de privacidad y la declaración de uso de cookies</label>
+            <input type="checkbox" name="acepto"  class="opcion" />
+            </p>
+            </fieldset>
+    </div>
+
+        <input type="submit" value="Crear cuenta" id="boton"/>
+
 </body>
 </html>
