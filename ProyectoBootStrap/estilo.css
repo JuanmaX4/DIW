@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
+
+/*Aqui esta importado la fuente de letra de las paginas*/
+
+body {
+
+    /* Ubicación de la imagen */
+    
+    background-image: url(./paginas/img/paisaje.jfif);
+    
+    /* Para dejar la imagen de fondo centrada, vertical y
+    
+    horizontalmente */
+    
+    background-position: center;
+    font-family: 'Lobster Two', cursive !important;
+    /* Para que la imagen de fondo no se repita */
+    
+    background-repeat: no-repeat;
+    
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    
+    background-attachment: fixed;
+     
+} 
+
+/* EXAMPLE 6 - Background Logo*/
+.example6 .navbar-brand{ 
+    background: url(./paginas/img/favicon.ico) center / contain no-repeat;
+    width: 200px;
+  }
+  
+
+  
+/*Animacion h1*/
+
+h1, h2{
+    text-align: center;
+    color: rgb(185, 114, 8); 
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 0.9em 0;
+    animation: animtext 4s steps(80, end); 
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+h1 {
+    background: 
+      linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+      linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+  h1:hover,
+  h1:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+  }
+
+
+@keyframes animtext { 
+ 
+ from {
+     width: 0;
+    transition: all 2s ease-in-out;
+ } 
+}
