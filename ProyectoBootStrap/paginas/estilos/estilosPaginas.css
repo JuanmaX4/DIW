@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
 
 /*Aqui esta importado la fuente de letra de las paginas*/
+
 body {
 
     /* Ubicación de la imagen */
     
-    background-image: url(../img/paisaje3.jfif);
-    font-family: 'Lobster Two', cursive !important;
-
+    background-image: url(../img/paisaje.jfif);
+    
     /* Para dejar la imagen de fondo centrada, vertical y
     
     horizontalmente */
     
-    background-position: center center;
-    
+    background-position: center;
+    font-family: 'Lobster Two', cursive !important;
     /* Para que la imagen de fondo no se repita */
     
     background-repeat: no-repeat;
@@ -21,186 +21,50 @@ body {
     /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
     
     background-attachment: fixed;
-    
-    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
-    
-    background-size: cover;
-
-    animation: load 4s;   
-    animation-fill-mode: forwards;
-      
-}
-
-@-webkit-keyframes load {
-    0%   {
-        opacity: 1;
-    }
-    50%   {
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1;
-    }
-
-}
+     
+} 
 
 
-
-/*Pantalla de carga*/
-
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
+h1, h2{
+    text-align: center;
+    color: rgb(185, 114, 8); 
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
     width: 100%;
-    height: 100%;
-}
-#loader {
     display: block;
     position: relative;
-    left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #9370DB;
-    -webkit-animation: spin 3s linear;
-    animation: spin 3s linear;
-    animation-fill-mode: forwards;
-}
-#loader:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #BA55D3;
-    -webkit-animation: spin 3s linear;
-    animation: spin 3s linear;
-    animation-fill-mode: forwards;
-}
-#loader:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #FF00FF;
-    -webkit-animation: spin 2.5s linear;
-    animation: spin 2.5s linear;
-    animation-fill-mode: forwards;
+    padding: 0.9em 0;
+    animation: animtext 4s steps(80, end); 
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
-/*Animacion del pantalla de carga*/
-
-@-webkit-keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    90% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-    100%{
-        opacity: 0;
-    }
-}
-@keyframes spin {
-    0%   {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    90% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-    100%{
-        opacity: 0;
-    }
-}
-
-.bg-img {
-    /* The image used */  
-    min-height: 380px;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
+h1 {
+    background: 
+      linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+      linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-  
-    /* Needed to position the navbar */
-    position: relative;
+    transition: background-size 400ms;
   }
   
-  /* Position the navbar container inside the image */
-  .container {
-    position: absolute;
-    margin: 20px;
-    width: auto;
+  h1:hover,
+  h1:focus {
+    background-size: 0 0.1em, 100% 0.1em;
   }
-  
-  /* The navbar */
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-    margin-top: 2em;
-    margin-left: 2em;
-  }
-  
-  /* Navbar links */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
+
+
+@keyframes animtext { 
+ 
+ from {
+     width: 0;
+    transition: all 2s ease-in-out;
+ } 
+}
+
+.leido{
+    background-color: lightgrey;
+    color: lightblack;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-.credit-card-div  span { padding-top:10px; }
-.credit-card-div img { padding-top:30px; }
-.credit-card-div .small-font { font-size:9px; }
-.credit-card-div .pad-adjust { padding-top:10px; }
-
-
-div.container {
-
-    margin: 0 !important;
-    margin-right: 0 !important;
-     padding-right: 0 !important;
-    padding-left: 0 !important;
 }
-    
-#formulario, #imagen {
-    /*border: 2px solid red !important;*/
-   margin-right: 0 !important;
-}
-    
-form input {
-   padding: 10px !important;
-   border: 1px solid rgba(0,0,0,0,2) !important;
-   height: 40px !important;
-}    
-button {
-    background-color: blue !important;
-}
-
-
