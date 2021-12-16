@@ -68,3 +68,30 @@ h1 {
     color: lightblack;
     text-align: center;
 }
+
+@media screen and (max-width: 64em) {
+  h1 {
+      font-size: 5em;
+    }
+    p{
+      font-size: 4.5em;
+    }
+  }
+  
+  @media screen and (max-width: 50em) {
+  h1 {
+      font-size: 4em;
+    }
+    p{
+      font-size: 3.4em;
+    }
+  }
+  
+  @media screen and (max-width: 30em){
+  h1 {
+      font-size: 1.5em;
+    }
+    p{
+      font-size: 0.5em;
+    }
+  }
