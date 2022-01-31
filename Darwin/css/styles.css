@@ -551,6 +551,10 @@ video {
   height: auto;
 }
 
+body {
+  background-image: url('../img/pattern.png');
+}
+
 .container {
   width: 100%;
 }
@@ -183915,5 +183919,3 @@ video {
             animation: bounce 1s infinite;
   }
 }
-
-
