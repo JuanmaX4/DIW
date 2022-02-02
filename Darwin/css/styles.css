@@ -555,6 +555,51 @@ body {
   background-image: url('../img/pattern.png');
 }
 
+/*FUENTES*/
+
+@font-face{
+  font-family: "TrebuchetMS";
+
+  src: url('fonts/TrebuchetMS.ttf');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "BebasNeue";
+
+  src: url('fonts/BebasNeue.otf');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "WebSymbolsRegular";
+
+  src: url('../css/fonts/websymbols-regular-webfont.woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+.symbol{
+  font-family: "WebSymbolsRegular";
+}
+
+.font{
+  font-family: "BebasNeue";
+}
+
+.card:hover{
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity))
+}
+
 .container {
   width: 100%;
 }
@@ -11219,16 +11264,12 @@ body {
   clear: none;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.font-symbols {
+  font-family: WebSymbolsRegular;
 }
 
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.font-bebas {
+  font-family: BebasNeue;
 }
 
 .font-thin {
@@ -11540,6 +11581,136 @@ body {
 }
 
 .text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.hover\:text-xs:hover {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.hover\:text-sm:hover {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.hover\:text-base:hover {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.hover\:text-lg:hover {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.hover\:text-xl:hover {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.hover\:text-2xl:hover {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.hover\:text-3xl:hover {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.hover\:text-4xl:hover {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.hover\:text-5xl:hover {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.hover\:text-6xl:hover {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.hover\:text-7xl:hover {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.hover\:text-8xl:hover {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.hover\:text-9xl:hover {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.group:hover .group-hover\:text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.group:hover .group-hover\:text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.group:hover .group-hover\:text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.group:hover .group-hover\:text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.group:hover .group-hover\:text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.group:hover .group-hover\:text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.group:hover .group-hover\:text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.group:hover .group-hover\:text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.group:hover .group-hover\:text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.group:hover .group-hover\:text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.group:hover .group-hover\:text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.group:hover .group-hover\:text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.group:hover .group-hover\:text-9xl {
   font-size: 8rem;
   line-height: 1;
 }
@@ -31180,6 +31351,56 @@ body {
           animation: bounce 1s infinite;
 }
 
+.hover\:animate-none:hover {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.hover\:animate-spin:hover {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.hover\:animate-ping:hover {
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.hover\:animate-pulse:hover {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.hover\:animate-bounce:hover {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
+.group:hover .group-hover\:animate-none {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.group:hover .group-hover\:animate-spin {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.group:hover .group-hover\:animate-ping {
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.group:hover .group-hover\:animate-pulse {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.group:hover .group-hover\:animate-bounce {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -41845,16 +42066,12 @@ body {
     clear: none;
   }
 
-  .sm\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .sm\:font-symbols {
+    font-family: WebSymbolsRegular;
   }
 
-  .sm\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .sm\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .sm\:font-bebas {
+    font-family: BebasNeue;
   }
 
   .sm\:font-thin {
@@ -42166,6 +42383,136 @@ body {
   }
 
   .sm\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .sm\:hover\:text-xs:hover {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .sm\:hover\:text-sm:hover {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:hover\:text-base:hover {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:hover\:text-5xl:hover {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:hover\:text-6xl:hover {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:hover\:text-7xl:hover {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .sm\:hover\:text-8xl:hover {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .sm\:hover\:text-9xl:hover {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .group:hover .sm\:group-hover\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .group:hover .sm\:group-hover\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .group:hover .sm\:group-hover\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .group:hover .sm\:group-hover\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .group:hover .sm\:group-hover\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .group:hover .sm\:group-hover\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .group:hover .sm\:group-hover\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .group:hover .sm\:group-hover\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .group:hover .sm\:group-hover\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .group:hover .sm\:group-hover\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .group:hover .sm\:group-hover\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .group:hover .sm\:group-hover\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .group:hover .sm\:group-hover\:text-9xl {
     font-size: 8rem;
     line-height: 1;
   }
@@ -61726,6 +62073,56 @@ body {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .sm\:hover\:animate-none:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .sm\:hover\:animate-spin:hover {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .sm\:hover\:animate-ping:hover {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .sm\:hover\:animate-pulse:hover {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .sm\:hover\:animate-bounce:hover {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .group:hover .sm\:group-hover\:animate-none {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .group:hover .sm\:group-hover\:animate-spin {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .group:hover .sm\:group-hover\:animate-ping {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .group:hover .sm\:group-hover\:animate-pulse {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .group:hover .sm\:group-hover\:animate-bounce {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
 }
 
 @media (min-width: 768px) {
@@ -72393,16 +72790,12 @@ body {
     clear: none;
   }
 
-  .md\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .md\:font-symbols {
+    font-family: WebSymbolsRegular;
   }
 
-  .md\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .md\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .md\:font-bebas {
+    font-family: BebasNeue;
   }
 
   .md\:font-thin {
@@ -72714,6 +73107,136 @@ body {
   }
 
   .md\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .md\:hover\:text-xs:hover {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .md\:hover\:text-sm:hover {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .md\:hover\:text-base:hover {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:hover\:text-5xl:hover {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:hover\:text-6xl:hover {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:hover\:text-7xl:hover {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:hover\:text-8xl:hover {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .md\:hover\:text-9xl:hover {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .group:hover .md\:group-hover\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .group:hover .md\:group-hover\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .group:hover .md\:group-hover\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .group:hover .md\:group-hover\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .group:hover .md\:group-hover\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .group:hover .md\:group-hover\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .group:hover .md\:group-hover\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .group:hover .md\:group-hover\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .group:hover .md\:group-hover\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .group:hover .md\:group-hover\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .group:hover .md\:group-hover\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .group:hover .md\:group-hover\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .group:hover .md\:group-hover\:text-9xl {
     font-size: 8rem;
     line-height: 1;
   }
@@ -92274,6 +92797,56 @@ body {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .md\:hover\:animate-none:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .md\:hover\:animate-spin:hover {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .md\:hover\:animate-ping:hover {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .md\:hover\:animate-pulse:hover {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .md\:hover\:animate-bounce:hover {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .group:hover .md\:group-hover\:animate-none {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .group:hover .md\:group-hover\:animate-spin {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .group:hover .md\:group-hover\:animate-ping {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .group:hover .md\:group-hover\:animate-pulse {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .group:hover .md\:group-hover\:animate-bounce {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -102941,16 +103514,12 @@ body {
     clear: none;
   }
 
-  .lg\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .lg\:font-symbols {
+    font-family: WebSymbolsRegular;
   }
 
-  .lg\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .lg\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .lg\:font-bebas {
+    font-family: BebasNeue;
   }
 
   .lg\:font-thin {
@@ -103262,6 +103831,136 @@ body {
   }
 
   .lg\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .lg\:hover\:text-xs:hover {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .lg\:hover\:text-sm:hover {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .lg\:hover\:text-base:hover {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:hover\:text-5xl:hover {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:hover\:text-6xl:hover {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:hover\:text-7xl:hover {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:hover\:text-8xl:hover {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:hover\:text-9xl:hover {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .group:hover .lg\:group-hover\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .group:hover .lg\:group-hover\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .group:hover .lg\:group-hover\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .group:hover .lg\:group-hover\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .group:hover .lg\:group-hover\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .group:hover .lg\:group-hover\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .group:hover .lg\:group-hover\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .group:hover .lg\:group-hover\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .group:hover .lg\:group-hover\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .group:hover .lg\:group-hover\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .group:hover .lg\:group-hover\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .group:hover .lg\:group-hover\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .group:hover .lg\:group-hover\:text-9xl {
     font-size: 8rem;
     line-height: 1;
   }
@@ -122822,6 +123521,56 @@ body {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .lg\:hover\:animate-none:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .lg\:hover\:animate-spin:hover {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .lg\:hover\:animate-ping:hover {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .lg\:hover\:animate-pulse:hover {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .lg\:hover\:animate-bounce:hover {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .group:hover .lg\:group-hover\:animate-none {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .group:hover .lg\:group-hover\:animate-spin {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .group:hover .lg\:group-hover\:animate-ping {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .group:hover .lg\:group-hover\:animate-pulse {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .group:hover .lg\:group-hover\:animate-bounce {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -133489,16 +134238,12 @@ body {
     clear: none;
   }
 
-  .xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .xl\:font-symbols {
+    font-family: WebSymbolsRegular;
   }
 
-  .xl\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .xl\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .xl\:font-bebas {
+    font-family: BebasNeue;
   }
 
   .xl\:font-thin {
@@ -133810,6 +134555,136 @@ body {
   }
 
   .xl\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .xl\:hover\:text-xs:hover {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .xl\:hover\:text-sm:hover {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .xl\:hover\:text-base:hover {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:hover\:text-5xl:hover {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .xl\:hover\:text-6xl:hover {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .xl\:hover\:text-7xl:hover {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .xl\:hover\:text-8xl:hover {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .xl\:hover\:text-9xl:hover {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .group:hover .xl\:group-hover\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .group:hover .xl\:group-hover\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .group:hover .xl\:group-hover\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .group:hover .xl\:group-hover\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .group:hover .xl\:group-hover\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .group:hover .xl\:group-hover\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .group:hover .xl\:group-hover\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .group:hover .xl\:group-hover\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .group:hover .xl\:group-hover\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .group:hover .xl\:group-hover\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .group:hover .xl\:group-hover\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .group:hover .xl\:group-hover\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .group:hover .xl\:group-hover\:text-9xl {
     font-size: 8rem;
     line-height: 1;
   }
@@ -153370,6 +154245,56 @@ body {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .xl\:hover\:animate-none:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .xl\:hover\:animate-spin:hover {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .xl\:hover\:animate-ping:hover {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .xl\:hover\:animate-pulse:hover {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .xl\:hover\:animate-bounce:hover {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .group:hover .xl\:group-hover\:animate-none {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .group:hover .xl\:group-hover\:animate-spin {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .group:hover .xl\:group-hover\:animate-ping {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .group:hover .xl\:group-hover\:animate-pulse {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .group:hover .xl\:group-hover\:animate-bounce {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -164037,16 +164962,12 @@ body {
     clear: none;
   }
 
-  .\32xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .\32xl\:font-symbols {
+    font-family: WebSymbolsRegular;
   }
 
-  .\32xl\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .\32xl\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .\32xl\:font-bebas {
+    font-family: BebasNeue;
   }
 
   .\32xl\:font-thin {
@@ -164358,6 +165279,136 @@ body {
   }
 
   .\32xl\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .\32xl\:hover\:text-xs:hover {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .\32xl\:hover\:text-sm:hover {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .\32xl\:hover\:text-base:hover {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .\32xl\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\32xl\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .\32xl\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .\32xl\:hover\:text-5xl:hover {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\32xl\:hover\:text-6xl:hover {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .\32xl\:hover\:text-7xl:hover {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .\32xl\:hover\:text-8xl:hover {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .\32xl\:hover\:text-9xl:hover {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .group:hover .\32xl\:group-hover\:text-9xl {
     font-size: 8rem;
     line-height: 1;
   }
@@ -183918,4 +184969,55 @@ body {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .\32xl\:hover\:animate-none:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .\32xl\:hover\:animate-spin:hover {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .\32xl\:hover\:animate-ping:hover {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .\32xl\:hover\:animate-pulse:hover {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .\32xl\:hover\:animate-bounce:hover {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .group:hover .\32xl\:group-hover\:animate-none {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .group:hover .\32xl\:group-hover\:animate-spin {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .group:hover .\32xl\:group-hover\:animate-ping {
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .group:hover .\32xl\:group-hover\:animate-pulse {
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .group:hover .\32xl\:group-hover\:animate-bounce {
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
 }
+
