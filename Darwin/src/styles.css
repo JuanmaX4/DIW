@@ -32,9 +32,16 @@
     .font{
         font-family: "BebasNeue";
     }
-    .card:hover{
+    .carta:hover{
         @apply
         text-white
     }
-}
 
+    @layer components {
+        .lista {
+            @apply mt-3 pr-10 hover:text-azul-claro hover:scale-125 transform duration-100
+        }
+        .carta{
+            @apply float-left w-52 h-80 bg-white overflow-hidden m-7 mt-10 cursor-pointer shadow-md
+        }
+}
