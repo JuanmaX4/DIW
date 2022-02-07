@@ -595,9 +595,143 @@ body {
   font-family: "BebasNeue";
 }
 
-.card:hover{
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity))
+/*TARJETAS*/
+
+.carta{
+  float:left;
+  width: 205px;
+  height: 305px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 2px #ddd;
+  background: white;
+  overflow: hidden;
+  margin: 22px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.carta:hover{
+  background: black;
+}
+
+.carta:last-child{
+  margin-right: 0px;
+}
+
+.carta .icono{
+  display: block;
+  width: 100%;
+  height: 130px;
+  font-size: 50px;
+  line-height: 110px;
+  text-align: center;
+  margin: 0px auto;
+  transition: all 300ms;
+}
+
+.carta:hover .icono{
+  font-size: 70px;
+  color: #37bcf9;
+  -webkit-animation: showIcono 300ms linear;
+          animation: showIcono 300ms linear;
+}
+
+@-webkit-keyframes showIcono{
+  from{
+    transform: translateY(-200%);
+  }
+
+  to{
+    transform: translateY(0%);
+  }
+}
+
+@keyframes showIcono{
+  from{
+    transform: translateY(-200%);
+  }
+
+  to{
+    transform: translateY(0%);
+  }
+}
+
+.carta .category{
+  width: 100%;
+  height: 50px;
+  font-family: "TrebuchetMS";
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: #00538c;
+  transition: all 300ms;
+}
+
+.carta:hover .category{
+  color: white;
+  -webkit-animation: showCategory 400ms linear;
+          animation: showCategory 400ms linear;
+}
+
+@-webkit-keyframes showCategory{
+  from{
+    transform: translateY(-300%);
+    color:black;
+  }
+
+  to{
+    transfrom: translateY(0%);
+    color: white;
+  }
+}
+
+@keyframes showCategory{
+  from{
+    transform: translateY(-300%);
+    color:black;
+  }
+
+  to{
+    transfrom: translateY(0%);
+    color: white;
+  }
+}
+
+.carta .description{
+  font-family: "TrebuchetMS";
+  text-align: center;
+  color: #0370b9;
+  font-size: 15px;
+  transition: all 300ms;
+}
+
+.carta:hover .description{
+  color: white;
+  -webkit-animation: showDescription 400ms linear;
+          animation: showDescription 400ms linear;
+}
+
+@-webkit-keyframes showDescription{
+  from{
+    transform: translateX(-300%);
+    color: black;
+  }
+
+  to{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes showDescription{
+  from{
+    transform: translateX(-300%);
+    color: black;
+  }
+
+  to{
+    transform: translateX(0%);
+  }
 }
 
 .container {
@@ -632,6 +766,50 @@ body {
   .container {
     max-width: 1536px;
   }
+}
+
+.lista {
+  margin-top: 0.75rem;
+  padding-right: 2.5rem
+}
+
+.lista:hover {
+  --tw-text-opacity: 1;
+  color: rgba(96, 165, 250, var(--tw-text-opacity));
+}
+
+.lista {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.lista:hover {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+}
+
+.lista {
+  transition-duration: 100ms;
+}
+
+.carta{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  cursor: pointer;
+  float: left;
+  height: 20rem;
+  margin: 1.75rem;
+  margin-top: 2.5rem;
+  overflow: hidden;
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  width: 13rem
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -185410,4 +185588,3 @@ body {
             animation: palaDerecha 3s linear;
   }
 }
-
