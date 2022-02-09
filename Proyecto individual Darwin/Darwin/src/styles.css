@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    body {
+        background-image: url('../img/pattern.png');
+    }
+    /*FUENTES*/
+    @font-face{
+        font-family: "TrebuchetMS";
+        src: url('fonts/TrebuchetMS.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: "BebasNeue";
+        src: url('fonts/BebasNeue.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: "WebSymbolsRegular";
+        src: url('../css/fonts/websymbols-regular-webfont.woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    .symbol{
+        font-family: "WebSymbolsRegular";
+    }
+    .font{
+        font-family: "BebasNeue";
+    }
+
+    .fotoNavbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fotoNavbar img {
+        height: 45%;
+        width: 35%;
+        object-fit: cover;
+    }
+
+}
