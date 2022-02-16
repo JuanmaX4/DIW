@@ -11,6 +11,10 @@ module.exports = {
         symbols: ['WebSymbolsRegular'],
         bebas: ['BebasNeue'],
       },
+      screens:{
+        'xs': '360px',
+        'sm': '300px'        
+      },
       animation: {
         'barrita': 'barrita 3s linear'
       },
@@ -18,7 +22,7 @@ module.exports = {
         barrita: { 
           '0%': { transform: 'scale(1) rotate(0deg)' },
           '50%': { transform: 'scale(1.6) rotate(10deg)'}                  
-        },
+        }
       }
     }
   }

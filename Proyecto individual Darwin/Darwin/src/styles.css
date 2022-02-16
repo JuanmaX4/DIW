@@ -101,12 +101,29 @@
   #myDiv {
     display: none;
     text-align: center;
+    padding-left: 20px;
   }
 
-  footer{
-    position:absolute;
-    bottom:0;
-    height: 20%;
+  .huerto:before{
+    content: 'Nuestros Huertos';
+    animation-name: head;
+    animation-duration: 3s;
+    animation-iteration-count: forwards;
+}
+
+@keyframes head {
+    0% {opacity:1;}
+    25% { opacity:0;content: "Nuestros huertos"}
+    50% { opacity:1; content: ""}
+    65% { opacity:0; content: "123435312"}
+    80% { opacity:1; content: "Nuestros muertos"}
+    90% { opacity:0;  content: "Nuestros uertos"}
+    100% {opacity:1; content: "Nuestros Huertos"}
+}
+
+ footer{
+    bottom: 0px;
+    height: 22%;
     width:100%;
   }
 }
