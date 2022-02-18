@@ -51,7 +51,7 @@
         width: 35%;
         object-fit: cover;
     }
-/* Center the loader */
+/* animacion del cargado de pantalla */
 #loader {
     position: absolute;
     left: 50%;
@@ -69,6 +69,8 @@
     animation: spin 2s linear infinite;
   }
   
+  /* Animacion de cargado de pagina */
+  
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
@@ -79,7 +81,7 @@
     100% { transform: rotate(360deg); }
   }
   
-  /* Add animation to "page content" */
+  /* Agriega una animacion despeus de la pagina al cargar*/
   .animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
@@ -98,11 +100,15 @@
     to{ bottom:0; opacity:1 }
   }
   
+  /* Div general del html donde se junta todo los divs junto a las cartas*/
   #myDiv {
     display: none;
     text-align: center;
     padding-left: 20px;
   }
+
+
+  /* Inicio de la animacion del titulo nuestros huertos en la primera carta */
 
   .huerto:before{
     content: 'Nuestros Huertos';
@@ -110,16 +116,18 @@
     animation-duration: 3s;
     animation-iteration-count: forwards;
 }
-
+/* Animacion de nuestros huertos de la carta de la pagina web */
 @keyframes head {
     0% {opacity:1;}
     25% { opacity:0;content: "Nuestros huertos"}
-    50% { opacity:1; content: ""}
-    65% { opacity:0; content: "123435312"}
-    80% { opacity:1; content: "Nuestros muertos"}
+    50% { opacity:1; content: "111011010111"}
+    65% { opacity:0; content: "Vue01011 mue0010101"}
+    80% { opacity:1; content: "010001100010uertos"}
     90% { opacity:0;  content: "Nuestros uertos"}
     100% {opacity:1; content: "Nuestros Huertos"}
 }
+
+  /* Estilo del footer */
 
  footer{
     bottom: 0px;

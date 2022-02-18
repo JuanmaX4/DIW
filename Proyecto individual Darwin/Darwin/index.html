@@ -4,11 +4,15 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <title>Mi web Darwin</title>
-        <link rel="icon" type="image/x-icon" href="./img/supertux.png">
+        <link rel="icon" type="image/x-icon" href="./img/favicon.png">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body onload="myFunction()">
 
+      <!-- onload lanza el script de inicio de cargado de pagina -->
+
+
+      <!-- inicio de barra de navegacion -->
 
         <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
@@ -26,7 +30,7 @@
             <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </button>
             <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
-              
+              <!-- Navbar barra de navegacion que obvio se encuentra en el inciio con sus colores border y su correspondiente responsives -->
             <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
               <input type="text" id="email-adress-icon" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
             <li class="hover:animate-barrita">
@@ -48,15 +52,20 @@
             </div>
             </div>
         </nav>
-            
-        <div id="loader"></div>
+      
+        <!-- Fin de la barra de navegacion -->      
+
+        <div id="loader"></div> <!-- cargado de pantalla que saldra despues de la animacion de la rueda de cargado -->
         <br>
+
+        <!-- Inicio Carta -->
+
         <div style="display:none;" id="myDiv" class="animate-bottom">
             <div class="flex sm:flex-col md:flex-row">
-            <div class="flex-1">  
+            <div class="flex-1 transform hover:scale-105 duration-500 ease-in-out">  
                 <div class="w-10/12 flex flex-col p-3">
                   <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
-                    <div class="bg-cover h-48" style="background-image: url(https://images.unsplash.com/photo-1523978591478-c753949ff840?w=900);"></div>
+                    <div class="bg-cover h-48" style="background-image: url(../Darwin/img//huertos.jfif);"></div>
                     <div class="p-4 flex-1 flex flex-col">
                       <h3 class="huerto mb-4 text-2xl"></h3>
                       <div class="mb-4 text-grey-darker text-sm flex-1">
@@ -68,11 +77,11 @@
                   </div>  
                 </div>
             </div>
-
-            <div class="flex-1"> 
-              <div class="w-10/12 flex flex-col p-3">
+            <!-- Cartas con sus estilos bordeados colores etc... -->
+            <div class="flex-1 transform hover:scale-105 duration-500 ease-in-out"> 
+              <div class="w-10/12 flex flex-col p-3 ">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
-                  <div class="bg-cover h-48" style="background-image: url(https://images.unsplash.com/photo-1523978591478-c753949ff840?w=900);"></div>
+                  <div class="bg-cover h-48" style="background-image: url(../Darwin/img/sopaChampi.jpg);"></div>
                   <div class="p-4 flex-1 flex flex-col">
                     <h3 class="mb-4 text-2xl">Productos</h3>
                     <div class="mb-4 text-grey-darker text-sm flex-1">
@@ -85,10 +94,10 @@
               </div>
           </div>
 
-            <div class="flex-1"> 
+            <div class="flex-1 transform hover:scale-105 duration-500 ease-in-out"> 
               <div class="w-10/12 flex flex-col p-3">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
-                  <div class="bg-cover h-48" style="background-image: url(https://images.unsplash.com/photo-1523978591478-c753949ff840?w=900);"></div>
+                  <div class="bg-cover h-48" style="background-image: url(../Darwin/img/historia.jpg);"></div>
                   <div class="p-4 flex-1 flex flex-col">
                     <h3 class="mb-4 text-2xl">Historia</h3>
                     <div class="mb-4 text-grey-darker text-sm flex-1">
@@ -102,8 +111,12 @@
           </div> 
         </div>                                                   
         </div>
-    
+      
+        <!-- FIN CARTA -->
+
         <br>
+
+        <!-- INICIO FOOTER -->
 
         <footer class="text-center text-white" style="background-color: #f1f1f1;">
             <div class="container pt-2">
@@ -114,7 +127,7 @@
                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Rare*<svg class="h-6 w-6 text-gray-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M3 21v-4a4 4 0 1 1 4 4h-4" />  <path d="M21 3a16 16 0 0 0 -12.8 10.2" />  <path d="M21 3a16 16 0 0 1 -10.2 12.8" />  <path d="M10.6 9a9 9 0 0 1 4.4 4.4" /></svg></span>
                         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Kaomoji-DB<svg class="h-6 w-6 text-gray-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>  <path d="M4 6v6a8 3 0 0 0 16 0v-6" />  <path d="M4 12v6a8 3 0 0 0 16 0v-6" /></svg></span>
                     </div>
-
+                    <!-- Footer donde se encuentra las colaboraciones y el copyright junto al estilo css-->
               <div class="flex justify-center mb-9">
                 <a href="#!" class="mr-9 text-gray-800">
                   <svg
@@ -127,6 +140,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512"
                   >
+
                     <path
                       fill="currentColor"
                       d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
@@ -222,18 +236,21 @@
             </div>
           
             <div class="text-center text-gray-700 p-4" style="background-color: rgba(0, 0, 0, 0.2);">
-              © 2022 Copyright:
+              © 2022 Copyright: Juan M. Jiménez Álvarez
               <a class="text-gray-800" href="../Darwin/index.html">ChampiShop S.A.</a>
             </div>
           </footer>
 
+            <!-- Fin del footer -->
+
+
         <script>
             var myVar;
-            
+            // funcion script del cargado de pantalla de inicio
             function myFunction() {
                 myVar = setTimeout(showPage, 3000);
             }
-            
+            // funcion script despues del cargado de pantalla para mostrar el contenido de esta
             function showPage() {
               document.getElementById("loader").style.display = "none";
               document.getElementById("myDiv").style.display = "block";
