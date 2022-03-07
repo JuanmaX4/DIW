@@ -139,6 +139,129 @@
         transform: translateX(0%);
     }
 }
+.articles {
+    @apply
+    w-articles
+    float-left
+  }
+
+  .articles h2 {
+    background: url('../img/pxgray.png');
+    line-height: 75px;
+    @apply
+    block
+    w-full
+    h-20
+    text-center
+    font-bebas
+    text-4xl
+    font-normal
+    tracking-wider
+    bg-white
+    shadow-md
+    m-0
+    mr-auto
+    mt-5
+    mb-4
+    pt-5
+  }
+
+  .articles article {
+    font-family: "TrebuchetMS";
+    @apply
+    w-article
+    h-auto
+    border-2
+    border-white
+    m-10
+    mr-auto
+    p-2
+    bg-white
+    text-black
+    shadow-md
+  }
+
+  .articles article h4 {
+    @apply
+    block
+    font-bold
+    text-2xl
+    m-0.5
+  }
+
+  .articles article h4 a {
+    color: #00538c;
+    @apply
+    no-underline
+  }
+
+  .articles article h4 a:hover {
+    @apply
+    underline
+  }
+
+  .articles .data {
+    background: #393d3f;
+    @apply
+    float-right
+    text-white
+    h-8
+    leading-9
+    -m-3
+    p-1
+    text-sm
+    rounded-sm
+  }
+
+  .articles .data span {
+    @apply
+    m-1
+  }
+
+  .articles article p {
+    @apply
+    mt-2
+    mb-2
+    text-sm
+  }
+
+  .blog {
+    transition-duration: 1s;
+    @apply
+    w-3/5
+    p-10
+    h-24
+    mt-16
+    leading-blog
+    text-center
+    transition-all
+  }
+
+  .blog a {
+    transition-duration: 1s;
+    color: #00538c;
+    @apply
+    block
+    font-bebas
+    text-4xl
+    tracking-widest
+    no-underline
+    transition-all
+  }
+
+  .blog:hover {
+    border-radius: 240px;
+    @apply
+    bg-gray-600
+    shadow-lg
+    animate-blinkBlog
+  }
+
+  .blog:hover a {
+    @apply
+    text-white
+    shadow-lg
+  }
 
 
 }
